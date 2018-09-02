@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSL Certificate Info</title>
-    <link rel="stylesheet" href="picnic.min.css"></head>
+    <link rel="stylesheet" href="picnic.min.css">
     <style>.container { width: 1200px; margin: auto; }</style>
+</head>
+
 <body>
     <div class="container">
         <h1>SSL Certificate Information</h1>
-        <table class="pure-table pure-table-bordered">
+        <table>
             <thead>
                 <tr>
                     <th>Domain</th>
