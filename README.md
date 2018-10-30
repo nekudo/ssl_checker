@@ -4,7 +4,7 @@ Simple tool to display information about the SSL Certificates of your domains.
 
 I created it to keep track of certificate expiration dates.  
 
-![ShinyDeploy Screenshot](https://nekudo.com/images/github/ssl_checker_screen01.png)
+![ShinyDeploy Screenshot](https://static.geekservice.de/github/ssl_checker_screen01.png)
 
 ## Installation and usage
 
