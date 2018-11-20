@@ -15,6 +15,7 @@
             <thead>
                 <tr>
                     <th>Domain</th>
+                    <th>Subject</th>
                     <th>Issuer</th>
                     <th>Valid From</th>
                     <th>Valid To</th>
@@ -26,6 +27,7 @@
                 <?php foreach ($this->certificateData as $item): ?>
                     <tr>
                         <td><?php echo $item['domain']; ?></td>
+                        <td><?php echo $item['subject']; ?></td>
                         <td><?php echo $item['issuer']; ?></td>
                         <td><?php echo $item['valid_from']; ?></td>
                         <td><?php echo $item['valid_to']; ?></td>

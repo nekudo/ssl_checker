@@ -102,7 +102,8 @@ class SslCheck
     private function extractTemplateData(string $site, array $cert): array
     {
         return [
-            'domain' => $cert['subject']['CN'] ?? $site,
+            'domain' => $site,
+            'subject' => $cert['subject']['CN'] ?? $site,
             'issuer' => $cert['issuer']['CN'] ?? '-',
             'valid_from' => isset($cert['validFrom_time_t']) ? gmdate('Y-m-d', $cert['validFrom_time_t']) : '-',
             'valid_to' => isset($cert['validTo_time_t']) ? gmdate('Y-m-d', $cert['validTo_time_t']) : '-',
