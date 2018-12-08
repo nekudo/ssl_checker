@@ -1,7 +1,7 @@
 <?php
 
 $sites = [
-    'nekudo.com',
     'mydomain.com',
+    'myotherdomain.net',
     // add your domains here...
 ];
