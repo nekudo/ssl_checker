@@ -4,7 +4,7 @@ Simple tool to display information about the SSL Certificates of your domains.
 
 I created it to keep track of certificate expiration dates.  
 
-![ShinyDeploy Screenshot](https://static.samtleben.me/github/ssl_checker_screen01.png)
+![ShinyDeploy Screenshot](https://static.samtleben.me/github/sslchecker01.png)
 
 ## Installation and usage
 
@@ -16,5 +16,3 @@ I created it to keep track of certificate expiration dates.
 ## License
 
 MIT
-
-This tool uses Picnic CSS available at [picnicss.com](http://picnicss.com).

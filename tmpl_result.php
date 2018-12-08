@@ -4,8 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSL Certificate Info</title>
-    <link rel="stylesheet" href="picnic.min.css">
-    <style>.container { width: 1200px; margin: auto; }</style>
+    <style>
+        body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+        .container { width: 1200px; margin: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        thead { text-align: left; }
+        tbody > tr:nth-of-type(odd) { background-color: rgba(0,0,0,0.05); }
+        tbody > tr:hover { background-color: #93a9bc; }
+        th, td { padding: .45em .4em; }
+        .label { color: #fff; border-radius: .2em; padding: .15em .4em; }
+        .label.success { background-color: #00a65a; }
+        .label.warning { background-color: #f39c12; }
+        .label.error { background-color: #dd4b39; }
+    </style>
 </head>
 
 <body>
@@ -33,11 +44,11 @@
                         <td><?php echo $item['valid_to']; ?></td>
                         <td>
                             <?php if ($item['state'] === 'error'): ?>
-                                <span class="label error">Error</span>
+                                <small class="label error">Error</small>
                             <?php elseif ($item['state'] === 'warning'): ?>
-                                <span class="label warning">Expiering Soon</span>
+                                <small class="label warning">Expiering Soon</small>
                             <?php else: ?>
-                                <span class="label success">OK</span>
+                                <small class="label success">OK</small>
                             <?php endif; ?>
                         </td>
                     </tr>
