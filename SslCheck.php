@@ -54,6 +54,11 @@ class SslCheck
             $certData = $this->fetchCertificateData($site);
             $this->certificateData[$site] = $this->extractTemplateData($site, $certData);
         }
+
+        // order by "valid_to" field
+        usort($this->certificateData, function($a, $b) {
+            return $a['valid_to'] <=> $b['valid_to'];
+        });
     }
 
     /**
